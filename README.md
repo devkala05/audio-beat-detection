@@ -1,19 +1,19 @@
-## 🎧 CUDA Audio Beat Detection
+## CUDA Audio Beat Detection
 
 This project implements a **GPU-accelerated audio beat detection system** using CUDA. It analyzes `.wav` audio files by computing short-time energy across frames and identifying beat timings where energy significantly exceeds the average.
 
 ---
 
-### 🚀 Features
+### Features
 
-* 📂 Processes 100+ `.wav` files in parallel (via script)
-* ⚡ Uses CUDA to accelerate energy calculations
-* 🔊 Outputs detected beat timestamps per file
-* 📈 Logs run data and results for validation
+* Processes 100+ `.wav` files in parallel (via script)
+* Uses CUDA to accelerate energy calculations
+* Outputs detected beat timestamps per file
+* Logs run data and results for validation
 
 ---
 
-### 📦 Requirements
+### Requirements
 
 * CUDA Toolkit (>= 10.0)
 * `libsndfile` installed (for reading `.wav` files)
@@ -26,7 +26,7 @@ sudo apt-get install libsndfile1-dev
 
 ---
 
-### 🛠️ How to Build & Run
+### How to Build & Run
 
 1. Place your `.wav` audio files inside `data/input/`
 2. Build and run the detector:
@@ -43,7 +43,7 @@ chmod +x run.sh
 
 ---
 
-### ⚙️ How It Works
+### How It Works
 
 1. **Load Audio**: `.wav` file is read using `libsndfile`.
 2. **Split into Frames**: Each audio is split into short frames (1024 samples).
@@ -53,7 +53,7 @@ chmod +x run.sh
 
 ---
 
-### 📊 Example Output (`file.wav_beats.txt`)
+### Example Output (`file.wav_beats.txt`)
 
 ```
 0.42
